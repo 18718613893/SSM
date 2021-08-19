@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.dao.StudentDao">
+    <select id="selectAll" resultType="com.xxx.domain.Student">
+        select * from stu
+    </select>
+
+    <insert id="insertStudent" parameterType="com.xxx.domain.Student">
+        insert into stu(username,sex,password) values(#{username},#{sex},#{password})
+    </insert>
+
+    <select id="selectById" resultType="com.xxx.domain.Student">
+        select * from stu where id=#{id}
+    </select>
+</mapper>

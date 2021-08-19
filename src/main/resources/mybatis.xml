@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+<!--    <settings>-->
+<!--&lt;!&ndash;输出日志&ndash;&gt;-->
+<!--        <setting name="logImpl" value="STDOUT_LOGGING"/>-->
+<!--    </settings>-->
+    
+    <typeAliases>
+<!--设置别名-->
+        <package name="com.xxx.domain"/>
+    </typeAliases>
+
+    <mappers>
+<!--这个包名里面的xml都可以被一次性加载-->
+       <package name="com.xxx.dao"/>
+    </mappers>
+
+
+</configuration>
